@@ -35,4 +35,28 @@ const imageDetails = {
 
 console.log(imageDetails);
 
+//6. How many ingredients has the paste?
+const ingredientsRef = document.querySelectorAll('.ingredients-list-paste li');
+console.log(ingredientsRef.length);
 
+//7. Which is the forth element in the list containing the ingredients for the paste?
+const ingredientsRef2 = document.querySelector('.ingredients-list-paste li:nth-child(4)').innerHTML;
+console.log(ingredientsRef2);
+
+/*8. Create an an array of objects from the instructions. Each element in the array should be an object that looks like this:
+{
+    order: number;
+    text: instruction;
+}*/
+const instructionRef = document.querySelectorAll('.instructions-list li');
+const instructionArray = [];
+
+instructionRef.forEach((instruction, index) => {
+    const instructionObject ={
+        order: index + 1,
+        Text: instruction.textContent
+    };
+    instructionArray.push(instructionObject);
+});
+
+console.log(instructionArray);
