@@ -45,3 +45,26 @@ ingredientsListRef.appendChild(item1);
 const item2 = document.createElement('li');
 item2.textContent = 'Lite smör';
 ingredientsListRef.appendChild(item2);
+
+/*10. The third ingredient in the list of ingredients to the paste is wrong.
+ Change that specific ingredient to the correct one.*/
+
+ const pasteIngredientsList = document.querySelectorAll('.ingredients-list-paste li');
+ pasteIngredientsList[2].textContent = '3tsk vaniljsocker';
+
+ /*11. There is also a missing ingredient in the list of ingredients to the paste.
+  Look and see what it is and add that one the the end of the list.*/
+
+  const pasteIngredientsRef = document.querySelector('.ingredients-list-paste');
+  const item5 = document.createElement('li');
+  item5.textContent = '400g naturell philadelphiaost';
+ pasteIngredientsRef.appendChild(item5);
+
+ //12. The text "Instructions" to the left, beneath the image, has some shadow styling applied to it. Remove that styling.
+ const instructionRef = document.querySelector('.shadow');
+ instructionRef.style.boxShadow = 'none';
+
+ //13. Two list elements of the list of instructions are incorrect. Find them and change them to the correct ones.
+const instructionListRef = document.querySelectorAll('.instructions-list li');
+instructionListRef[1].textContent = 'Separera ägggulor och äggvitor. Äggvitorna lägger du i en stor bunke, äggulorna i en liten bunke.';
+instructionListRef[8].textContent = 'Ställ in i frysen över natten.';
