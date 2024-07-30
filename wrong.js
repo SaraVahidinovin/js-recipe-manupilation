@@ -21,3 +21,7 @@ clockRef.classList.add('material-icons');
 const timeRef = document.querySelector('.time');
 timeRef.textContent = "60+ min";
 
+/*7. The src path to the image is wrong, or atleast it's showing the wrong image. 
+Change it to the correct one. The available images can be found in the assets folder.*/
+const imgRef = document.querySelector('.image-container img');
+imgRef.src = "assets/frozen-cheesecake-slice.jpg";
