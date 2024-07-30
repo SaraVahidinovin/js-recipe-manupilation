@@ -29,3 +29,19 @@ imgRef.src = "assets/frozen-cheesecake-slice.jpg";
 //8. The background color of the ingredients list container is wrong. Fix it.
 const ingredientsRef = document.querySelector('.ingredients-container');
 ingredientsRef.style.backgroundColor = "#f9f9f9";
+
+/*9. The ingredients are divided in to two parts, one for the bottom and one for the paste.
+ In the list of the ingredients to the bottom, there is a text instead of two list items.
+  Remove the text and add those two list items.*/
+const ingredientsListRef = document.querySelector('.ingredients-list-bottom');
+
+const textRef = ingredientsListRef.querySelector('p');
+ingredientsListRef.removeChild(textRef);
+
+const item1 = document.createElement('li');
+item1.textContent = '15st digestivetex';
+ingredientsListRef.appendChild(item1);
+
+const item2 = document.createElement('li');
+item2.textContent = 'Lite smör';
+ingredientsListRef.appendChild(item2);
