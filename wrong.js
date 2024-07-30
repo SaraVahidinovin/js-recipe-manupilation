@@ -25,3 +25,7 @@ timeRef.textContent = "60+ min";
 Change it to the correct one. The available images can be found in the assets folder.*/
 const imgRef = document.querySelector('.image-container img');
 imgRef.src = "assets/frozen-cheesecake-slice.jpg";
+
+//8. The background color of the ingredients list container is wrong. Fix it.
+const ingredientsRef = document.querySelector('.ingredients-container');
+ingredientsRef.style.backgroundColor = "#f9f9f9";
